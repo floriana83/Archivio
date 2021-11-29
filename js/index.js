@@ -6,14 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(API)
         .then((response) => response.json())
         .then((data) => data.map((element) => {
-            element.active=[Math.floor(Math.random() * 10)+1];
+            element.active = [Math.floor(Math.random() * 10) + 1];
             if (element.active > 5) {
-                return { ...element, active: !element.active };  
-            }else{
+                return {
+                    ...element,
+                    active: !element.active
+                };
+            } else {
                 return element
             }
-            
-        })) 
+
+        }))
         .then((data) => List(data));
 });
 
