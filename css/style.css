@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;700&family=Press+Start+2P&display=swap");
+:root {
+  --main_color: #353535;
+}
+
+body {
+  font-family: "Mohave", sans-serif;
+  margin: 0;
+  border: 0;
+}
+
+main {
+    width: 80%;
+    margin: 50px auto 80px;
+    font-family: sans-serif;
+  }
+
+header {
+    width: 100%;
+  
+    margin: auto;
+    background: rgba(0, 0, 0, 0.63);
+  
+  
+    color: rgb(20, 85, 172);
+    padding: 30px 0px;
+  
+    font-size: 14px;
+  
+    margin-top: 20px;
+    text-align: center;
+    color: wheat;
+
+}
+  
+  form {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
+  footer {
+    width: 100%;
+  
+    margin: auto;
+    background: rgba(0, 0, 0, 0.63);
+  
+  
+    color: rgb(20, 85, 172);
+    padding: 30px 0px;
+  
+    font-size: 14px;
+  
+    margin-top: 20px;
+    text-align: center;
+    color: wheat;
+  }
+  footer a{
+    color: #fff;
+  }
+  
+  footer a:hover{
+    color: rgb(65, 214, 225);
+    text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 10px;
+    }
+  }
