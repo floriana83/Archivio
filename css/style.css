@@ -1,69 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;700&family=Press+Start+2P&display=swap");
-:root {
-  --main_color: #353535;
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Sigmar+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
 }
+
+
 
 body {
   font-family: "Mohave", sans-serif;
-  margin: 0;
-  border: 0;
+ 
+ 
+
+  
+}
+
+h1{
+ 
+  color:white;
+  font-size: xx-large;
+}
+
+
+header {
+background-image: url(/img/wavehero.png);
+background-size: cover;
+
+padding: 10px 0;
+  
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Sigmar One', cursive;
+    width: 100%;
+    height: 300px;
+    
+    font-size: 14px;
+    text-align: center;
+    color: wheat;
+
 }
 
 main {
-    width: 80%;
-    margin: 50px auto 80px;
-    font-family: sans-serif;
-  }
+  
+  margin: 50px auto 80px;
+  font-family: sans-serif;
+  max-width: 990px;
+  
+}
+h2 {
+  text-align: center;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Sigmar One', cursive;
+}
 
-header {
-    width: 100%;
+
+form, .nav {
+ 
+ 
+  display: grid;
+  grid-template-columns: minmax(50px, 100px) 1fr  1.5fr 1fr 0.5fr; 
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  padding-left: 50px;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  width: 100%;
   
-    margin: auto;
-    background: rgba(0, 0, 0, 0.63);
-  
-  
-    color: rgb(20, 85, 172);
-    padding: 30px 0px;
-  
-    font-size: 14px;
-  
-    margin-top: 20px;
-    text-align: center;
-    color: wheat;
+}  
+.nav {
+  background-color: #0099ff7a ;
+
+  border-radius: 20px;
+  margin-bottom: 10px;
 
 }
-  
-  section {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 5px 0;
-  }
-  
+
+
   footer {
-    width: 100%;
-  
-    margin: auto;
-    background: rgba(0, 0, 0, 0.63);
-  
-  
-    color: rgb(20, 85, 172);
-    padding: 30px 0px;
-  
-    font-size: 14px;
-  
-    margin-top: 20px;
+   
+    color: white;
+    padding: 100px 0;
     text-align: center;
-    color: wheat;
+    font-size: 12px;
+    
+    background-image: url(/img/waveFooter.png) ;
+    background-size: cover;
   }
   footer a{
     color: #fff;
@@ -74,10 +94,4 @@ header {
     text-decoration: none;
   }
 
-  @media (min-width: 768px) {
-    ul {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 10px;
-    }
-  }
+
