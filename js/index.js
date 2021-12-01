@@ -38,14 +38,12 @@ document.addEventListener("DOMContentLoaded", async () => {
              return (el) 
          }
          }).map((el) =>`
-             <li>
-                 <label for="search">Status User <input type="radio"  ${el.active ? "checked" : ""}  />  </label>
-                 <h3>${el.name}</h3>  
-                       
-                 <p><strong>Email:</strong> <a href="mailto:${el.email}">${el.email}</a></p>
-                 <p><strong>Phone:</strong> <a href="tel:${el.phone}">${el.phone}</a></p>
-     
-              </li>`)
+         <form>
+         <span><input type="radio" ${el.active ? "checked" : ""}  /></span>
+         <span>${el.name}</span>     
+         <span><a href="mailto:${el.email}">${el.email}</a></span>
+         <span><a href="tel:${el.phone}">${el.phone}</a></span>
+         </form>`)
          .join("");
 
 
@@ -54,7 +52,7 @@ const containerTwo = q("#containerTwo");
 
 renderActive(
     containerTwo,
-    `<ul>${elements}</ul>`
+    `<div id="containerTwo">${elements}</div>`
 );
 
 };
@@ -72,20 +70,19 @@ const List = (data) => {
             return (item) 
         }
         }).map((el) =>`
-        <li>
-            <label for="search">Status User <input type="radio"  ${el.active ? "checked" : ""}  />  </label>
-            <h3>${el.name}</h3>  
-                  
-            <p><strong>Email:</strong> <a href="mailto:${el.email}">${el.email}</a></p>
-            <p><strong>Phone:</strong> <a href="tel:${el.phone}">${el.phone}</a></p>
-
-         </li>`)
+        <form>
+        <span><input type="radio" disabled ${el.active ? "checked" : ""}  /></span>
+         <span>${el.name}</span>       
+         <span><a href="mailto:${el.email}">${el.email}</a></span>
+         <span><a href="tel:${el.phone}">${el.phone}</a></span>
+         
+         </form>`)
     .join("");
        
         const container = q("#container");      
         renderInactive(
             container,
-            `<ul>${elementsTwo}</ul>`
+            `<div id="container">${elementsTwo}</div>`
         );
     
     
