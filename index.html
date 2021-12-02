@@ -17,46 +17,35 @@
   </header>
 
   <main>
-    <h2>Active User</h2>
-    <div class="nav">
-      <span>
-        <strong>Status</strong>
-      </span>
-      <span>
-        <strong>Name</strong>
-      </span>
-      <span>
-        <strong>Email</strong>
-      </span>
-      <span>
-        <strong>Phone</strong>
-      </span>
-     
-    </div>
-    <div id="containerTwo">
-      <!-- <span> 
-                    <strong>Name</strong>
-                </span>
-                <span> 
-                    <strong>Email</strong>
-                </span>
-                <span> 
-                    <strong>Phone</strong>
-                </span>
-                <span> 
-                    <strong>Status</strong>
-                </span>
-                    <h3>${el.name}</h3>     
-                    <span><a href="mailto:${el.email}">${el.email}</a></span>
-                    <span><a href="tel:${el.phone}">${el.phone}</a></span>
-                    <span><label for="search">Status User <input type="radio"  ${el.active ? "checked" : ""}  /></label></span> -->
-    </div>
+    <div id="wrapperActive">
+      <h2><ion-icon name="person-circle-outline"></ion-icon>Active User</h2>
+      <div class="nav">
+        <!-- <span>
+          <strong>Status</strong>
+        </span> -->
+        <span>
+          <strong>Name</strong>
+        </span>
+        <span>
+          <strong>Email</strong>
+        </span>
+        <span>
+          <strong>Phone</strong>
+        </span>
+       
+      </div>
+      <div id="containerTwo">
 
-    <h2>Inactive User</h2>
+      </div>
+    </div>
+    
+    <div id="wrapperInactive">
+    <h2><ion-icon name="person-circle-outline"></ion-icon>Inactive User</h2>
+    
     <div class="nav">
-      <span>
-        <strong>Status</strong>
-      </span>
+      <!-- <span> -->
+        <!-- <strong>Status</strong>
+      </span> -->
       <span>
         <strong>Name</strong>
       </span>
@@ -70,14 +59,13 @@
     </div>
     <div id="container">
 
-
-
-
     </div>
-
+  </div>
   </main>
 
   <script src="./js/index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <footer>
 
