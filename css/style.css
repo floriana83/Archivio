@@ -3,27 +3,29 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
 
 body {
   font-family: "Mohave", sans-serif;
- 
+ background-image: url(/img/background.png);
  
 
   
 }
 
 h1{
- 
-  color:white;
-  font-size: xx-large;
+ padding-top: 20px;
+  
+  font-size: 50px;
+  color: rgb(18, 6, 175);
 }
 
 
 header {
-background-image: url(/img/wavehero.png);
+background-image: url(/img/wave__hero.png);
 background-size: cover;
 
 padding: 10px 0;
@@ -31,11 +33,11 @@ padding: 10px 0;
   font-family: 'Mochiy Pop P One', sans-serif;
   font-family: 'Sigmar One', cursive;
     width: 100%;
-    height: 300px;
+    height: 350px;
     
     font-size: 14px;
     text-align: center;
-    color: wheat;
+    color: rgb(184, 179, 245);
 
 }
 
@@ -50,48 +52,143 @@ h2 {
   text-align: center;
   font-family: 'Mochiy Pop P One', sans-serif;
   font-family: 'Sigmar One', cursive;
+  padding-bottom: 20px;
+  font-size: 30px;
+  
+
+}
+#wrapperActive h2{
+  
+color: rgb(75, 221, 38);
+  
 }
 
-
-form, .nav {
- 
- 
+#wrapperActive {
+  border: 1px solid #ccc;
+  /* width: 1000px; */
+  border-radius: 10px 100px ;
+ margin-bottom: 20px;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.452);
+  
+}
+#wrapperInactive h2{
+  
+  color: rgb(245, 112, 102);
+    
+  }
+#wrapperInactive {
+  border: 1px solid #ccc;
+  border-radius: 100px 10px;
+  /* width: 1000px; */
+  background-color: rgba(0, 0, 0, 0.452);
+  padding: 60px;
+}
+input[type="radio"] {
+  display: none;
+}
+form{
   display: grid;
-  grid-template-columns: minmax(50px, 100px) 1fr  1.5fr 1fr 0.5fr; 
+  grid-template-columns:  0fr  1.2fr 1.2fr 1.2fr; 
   margin-bottom: 5px;
   border: 1px solid #ccc;
-  padding-left: 50px;
-  border-radius: 20px;
+  padding: 10px 50px;
+  border-radius: 5px  5px 15px  15px  ;
   justify-content: space-evenly;
-  width: 100%;
-  
+  background-color: #fdfeff7a ;
+  /* width: 100%; */
+  outline: none;
+  text-decoration: none;
 }  
 .nav {
-  background-color: #0099ff7a ;
-
-  border-radius: 20px;
+  display: grid;
+  grid-template-columns:    1fr 1fr 1fr; 
+  background-color: #0099ffab ;
+  border-radius:  15px  15px 5px  5px ;
   margin-bottom: 10px;
+  text-align: center;
+  padding: 20px 100px 20px 10px;
+  
 
 }
 
 
   footer {
    
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    font-size: 12px;
     
+    padding: 200px 0;
+    
+   
     background-image: url(/img/waveFooter.png) ;
     background-size: cover;
+    position:relative;
+    
+    /* height: 100px; */
   }
   footer a{
-    color: #fff;
+    color: rgb(42, 124, 248);
   }
   
   footer a:hover{
-    color: rgb(65, 214, 225);
+    color: rgb(121, 65, 225);
     text-decoration: none;
   }
 
+  footer p {
+    position:absolute;
+    /* bottom: 0; */
+    padding: 100px;
+    font-size:large;
+    left: 30%;
+  }
+
+
+ 
+
+  /* /----- Smatphone -----*/ 
+
+  @media (max-width: 767px ){
+    header {margin: -13px auto 45px; height: 162px; padding: 0;}    
+h1{font-size: 25px;}
+
+h2 {padding-bottom: 20px; font-size: 15px;}
+
+#wrapperActive, #wrapperInactive {padding: 22px;}
+#wrapperActive {border-radius: 10px 56px ;}
+
+#wrapperInactive {border-radius: 56px 10px;}
+
+form{
+  display: grid;
+  grid-template-columns:  0fr 1fr 1.2fr 1fr; 
+  font-size: 8px;
+  padding: 1px 5px;
+  border-radius: 2px  2px 8px  8px;
+  
+}  
+.nav {
+  display: grid;
+  grid-template-columns:    1fr 1fr 1fr; 
+  background-color: #0099ffab ;
+  border-radius:  15px  15px 5px  5px ;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 8px;
+  padding: 5px 5px;
+
+}
+
+footer {padding: 64px 0; }
+ 
+footer p{
+  font-size: xx-small;
+  padding: 0;
+  left: 15%;
+}
+
+}
+
+
+ 
+ 
 
